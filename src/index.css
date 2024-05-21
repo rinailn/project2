@@ -11,3 +11,134 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.nav-wrapper{
+  padding: 0 2rem;
+}
+nav{
+  position: fixed;
+  z-index: 5;
+}
+.main-content{
+  min-height: 100vh;
+}
+.preloader{
+  display: block;
+  margin: 0 auto;
+}
+.goods {
+  max-width: 100%;
+  padding: 5rem 2.5rem 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.not-found{
+  margin: 0 auto;
+}
+.valign-wrapper{
+  justify-content: center;
+}
+.card-desc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.bold{
+  font-weight: bold;
+}
+.cart{
+  display: flex;
+  -webkit-transition: background-color .3s;
+  background-color: transparent;
+  transition: background-color .3s;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.basket{
+  max-width: 50rem;
+  max-height: 20rem;
+  top: 30%;
+  margin: 0 auto;
+  overflow-y: auto;
+  animation: show 250ms ease-in-out;
+}
+@keyframes show {
+  from {
+    top: 70%;
+    opacity: 0;
+  }
+  to {
+    top: 30%;
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fixed{
+  position: fixed;
+}
+.basket-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgba(0, 0, 0, .5);
+  animation: fade-in 100ms ease;
+}
+.close{
+  cursor: pointer;
+  float: right;
+  margin-left: auto;
+}
+.basket-close{
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+}
+.text-bold{
+  font-weight: bold !important;
+}
+
+.item-desc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__title{
+  width: 100%;
+  background-color: rgba(172, 48, 179, 0.8);
+  padding: 0.8rem !important;
+  white-space: nowrap!important;
+  font-size: 1rem!important;
+}
+.basket-item--img{
+  width: 3.5rem;
+  margin-right: 1rem;
+}
+.collection{
+  border: none ;
+}
+.basket-quantity{
+  cursor: pointer;
+  vertical-align: middle;
+}
